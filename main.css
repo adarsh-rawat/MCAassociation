@@ -80,10 +80,10 @@ header .hamburger {
     text-shadow: 0 0 20px black;
     padding: 2% 4%;
 }
-.upcoming, .about, .contact {
+section {
     display: flex;
     flex-direction: column;
-    margin: 5%;
+    padding: 5%;
     justify-content: center;
     align-items: center;
     font-family: 'Poppins', sans-serif;
@@ -93,7 +93,8 @@ header .hamburger {
     font-family: inherit;
     text-align: center;
     font-size: 1.1rem;
-    padding-top: 1rem;
+    padding: 1rem;
+    font-weight: 500;
 }
 .clubs-container {
     display: flex;
@@ -101,22 +102,76 @@ header .hamburger {
     justify-content: space-around;
     align-items: center;
 }
-.about .description{
+.description{
     margin: 10px 0;
-    max-width: 600px;
-    font-size: 0.7rem;
+    max-width: 700px;
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: #c8c8c8;
 }
 .about .club .desc{
-    font-size: 0.7rem;
+    font-size: 0.9rem;
 }
 .about .club {
     max-width: 400px;
-    padding: 12px;
+    padding: 24px 16px;
     margin: 16px;
     border: solid 3px #009fff;
     border-radius: 24px;
     text-align: center;
 }
+.club img {
+    margin: 16px;
+    height: 120px;
+}
 .contact{
-    background: radial-gradient(white, black);
+    background: #151515;
+}
+#contact_form{
+    width: 100%;
+    max-width: 500px;
+}
+.contact .error, .contact .success {
+    display: none;
+}
+
+.form-control::placeholder {
+    color: #6c757d;
+    opacity: 1;
+}
+.form-control{
+    background-color: black;
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    line-height: 1rem;
+    height: auto;
+    font-size: 0.8rem;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.contact .btn-line{
+    background: transparent;
+    color:white;
+    border: 1px solid white;
+    padding: 8px 24px;
+    font-size: 0.8rem;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#contact_form input[placeholder], #contact_form textarea[placeholder]{
+    color: white;
+    border: 2px solid black;
+    outline: none;
+    transition: 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#contact_form input:focus, #contact_form textarea:focus{
+    /* border-color: #009fff; */
+    box-shadow: 0 0 20px #009fff;
+}
+#contact_form .btn-line:hover{
+    color: black;
+    background-color: #009dff;
+    border-radius: 2px;
+    border: none;
 }

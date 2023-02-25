@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="media.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -38,33 +38,93 @@
                 </div>
             </div>
         </div>
-        <div class="upcoming">
+        <section class="upcoming">
             <div class="heading">Upcoming Events...</div>
-        </div>
-        <div class="about" id="about">
+            <img src="maffick.png" alt="Maffick" width="60%" style="max-width: 700px;">
+            <div class="description">We are working under Maffick to organize Culutural events and performances 
+                by our members to the environment of NIT Bhopal.
+                We are also going to organize open mic events where anyone from the audience can perform as per their talent and 
+                win exciting prizes.
+            </div>
+        </section>
+        <section class="about" id="about">
             <!-- <div class="heading">About us</div> -->
             <img src="mca_logo.png" alt="" width="100%" style="max-width: 350px; margin: 16px 0">
             <div class="description">MCA Association is working under Department of Mathematics, Bioinformatics and Computer Application, MANIT Bhopal.</div>
             <div class="clubs-container">
                 <div class="club">
-                    <div class="title">Title</div>
+                    <div class="title">Matrix</div>
+                    <img src="matrix_logo.png" alt="" style="text-align: center;">
                     <div class="desc">This is sample text just written to observe the
                         style of the content.
                     </div>
                 </div>
                 <div class="club">
-                    <div class="title">Title</div>
-                    <img src="matrix_logo.png" alt="" height="100px" style="text-align: center;">
+                    <div class="title">Rubiks</div>
+                    <img src="rubix_logo.png" alt="" style="background: white; border-radius: 50%;">
                     <div class="desc">This is sample text just written to observe the
                         style of the content.
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="contact">
+        </section>
+        <section class="contact">
             <div class="heading">Contact Us</div>
-            
-        </div>
+            <form name="contactForm" id="contact_form" method="POST">
+                <div class="row" style="background-size: cover;">
+                    <div class="col-md-6" style="background-size: cover;">
+                        <div id="name_error" class="error" style="background-size: cover;">Please enter your name.</div>
+                        <div style="background-size: cover;">
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Name">
+                        </div>
+
+                        <div id="email_error" class="error" style="background-size: cover;">Please enter your valid E-mail ID.</div>
+                        <div style="background-size: cover;">
+                            <input type="text" name="email" id="email" class="form-control" placeholder="Email">
+                        </div>
+
+                        <div id="phone_error" class="error" style="background-size: cover;">Please enter your phone number.</div>
+                        <div style="background-size: cover;">
+                            <input type="text" name="phoneNumber" id="phoneNumber" class="form-control" placeholder="Mobile Number">
+                        </div>
+                    </div>
+                    <div class="col-md-6" style="background-size: cover;">
+                        <div id="college_error" class="error" style="background-size: cover;">Please enter your college.</div>
+                        <div style="background-size: cover;">
+                            <input type="text" name="college" id="college" class="form-control" placeholder="Institution">
+                        </div>
+
+                        <div id="message_error" class="error" style="background-size: cover;">Please enter your valid E-mail ID.</div>
+                        <div style="background-size: cover;">
+                            <textarea rows="5" type="text" name="message" id="message" class="form-control" placeholder="Your message"></textarea>
+                        </div>
+
+                    </div>
+                    
+                    <div id="errorMain" style="background-size: cover; color: red;" class="error">User already registered</div>
+                    <div class="col-md-12 text-center" style="background-size: cover;">
+                        <p id="submit">
+                            <input type="submit" id="submit" value="Register Now" class="btn btn-line">
+                        </p>
+                        <div id="mail_success" class="success" style="background-size: cover;">Your message has been sent successfully.
+                        </div>
+                        <div id="mail_fail" class="error" style="background-size: cover;">Sorry, error occured this time sending your
+                            message.</div>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <section>
+            <div class="upper_footer">
+                <p>Incubated by-</p>
+                <div class="heading" style="color: #009fff; padding-bottom: 0!important;">Department of Bioinformatics, Mathematics and Computer Application</div>
+                <div class="heading">Maulana Azad National Institute of Technology, Bhopal </div>
+                <div class="description">The MCA Association aims to provide greater exposure to
+                    students and upskill them to the global industries' demands.
+                </div>
+            </div>
+        </section>
 
         <script>
             let x = document.getElementById('hamburger-menu')
