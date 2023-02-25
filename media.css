@@ -1,0 +1,20 @@
+@media screen and (max-width: 600px) {
+    header ul li{
+        display: none;
+    }
+    header .logo-container{
+        margin-left: -5%;
+    }
+    header .hamburger {
+        display: block;
+    }
+    html {
+        font-size: 18px;
+    }
+    .upcoming{
+        margin: 16px;
+    }
+    .clubs-container {
+        flex-direction: column;
+    }
+}
