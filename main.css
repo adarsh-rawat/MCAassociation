@@ -57,7 +57,7 @@ header .hamburger {
     display: flex;
     justify-content: left;
     align-items:last baseline;
-    background-image: url("/manit_mca.jpg");
+    background-image: url("https://adarsh-rawat.github.io/MCAassociation/manit_mca.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
