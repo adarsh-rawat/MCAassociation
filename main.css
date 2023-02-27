@@ -274,7 +274,7 @@ section {
 }
 .border-container {
     height: 4px;
-    background: linear-gradient(to right, #de0505, #fc6103, #009fff);
+    background: linear-gradient(to right, #2102fb, #ae03fc, #009fff);
     border-radius: 2px;
 }
 .event .register a{
@@ -289,4 +289,23 @@ section {
 }
 .register a:hover{
     background-color: #004c7a;
+}
+.lower_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 0.7rem;
+}
+.lower_footer ul{
+    list-style: none;
+    text-align: center;
+}
+.lower_footer ul a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.lower_footer ul  a:hover {
+    color:#0094f0;
 }
