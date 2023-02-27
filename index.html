@@ -16,10 +16,10 @@
                     <img src="manit logo.png" alt="" height="87px" style="margin-bottom: -15px;">
                 </div>
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Team</li>
-                    <li>Contact</li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div class="hamburger" onclick="moveMenu()">
                     <img src="menu.png" alt="menu" height="32px">
@@ -27,9 +27,9 @@
             </div>
             <div class="hamburger-menu" id="hamburger-menu">
                 <a href="#">Home</a>
-                <a href="">About</a>
-                <a href="">Team</a>
-                <a href="">Contact</a>
+                <a href="#about">About</a>
+                <a href="#team">Team</a>
+                <a href="#contact">Contact</a>
             </div>
         </header>
         <div class="main">
@@ -126,7 +126,7 @@
                 </div>
                 <div class="event" id="event3">
                     <div class="image-container">
-                        <img src="band.jpg" alt="">
+                        <img src="rab_ne_bana_di_jodi.png" alt="Rab ne bana di jodi">
                         <div class="description">
                             <div class="head">
                                 Rab Ne Bana Di Jodi
@@ -186,9 +186,9 @@
                 </div>
             </div>
         </section>
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="heading">Contact Us</div>
-            <form name="contactForm" id="contact_form" method="POST">
+            <form name="contactForm" id="contact_form" action="https://formspree.io/f/xvonrglr" method="POST">
                 <div class="row" style="background-size: cover;">
                     <div class="col-md-6" style="background-size: cover;">
                         <div id="name_error" class="error" style="background-size: cover;">Please enter your name.</div>
@@ -198,7 +198,7 @@
 
                         <div id="email_error" class="error" style="background-size: cover;">Please enter your valid E-mail ID.</div>
                         <div style="background-size: cover;">
-                            <input type="text" name="email" id="email" class="form-control" placeholder="Email">
+                            <input type="email" name="email" id="email" class="form-control" placeholder="Email">
                         </div>
 
                         <div id="phone_error" class="error" style="background-size: cover;">Please enter your phone number.</div>
