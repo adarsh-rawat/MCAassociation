@@ -17,4 +17,20 @@
     .clubs-container {
         flex-direction: column;
     }
+    .events .container {
+        flex-direction: column;
+    }
+    .event {
+        width: 80%;
+        margin: 10%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .event {
+        width: 30%;
+        max-width: 350px;
+        min-width: 300px;
+        margin: 16px;
+    }
 }

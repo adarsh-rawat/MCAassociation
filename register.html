@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MCA Association, MANIT</title>
+        <link rel="stylesheet" href="register.css">
+        <link rel="stylesheet" href="media.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo-container">
+                    <img src="mca_logo.png" alt="" height="87px" style="margin-bottom: -15px;" >
+                </div>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Team</li>
+                    <li>Contact</li>
+                </ul>
+                <div class="hamburger" onclick="moveMenu()">
+                    <img src="menu.png" alt="menu" height="32px">
+                </div>
+            </div>
+            <div class="hamburger-menu" id="hamburger-menu">
+                <a href="#">Home</a>
+                <a href="">About</a>
+                <a href="">Team</a>
+                <a href="">Contact</a>
+            </div>
+        </header>
+        <main>
+            <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfKSoynjkaF2_fFRV-HVT2hm5a_TQw6yxDl-yJbOhuijFpRqA/viewform?embedded=true" 
+            width="100%" height="2400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
+            <iframe id="frame_1" width="100%" height="2400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </main>
+        <script>
+            const formNo= new URL(window.location.toLocaleString()).searchParams.get('form');
+            let frame1=document.getElementById('frame_1');
+            
+            if(formNo==1){
+                frame1.src="https://forms.gle/PXm2VAapJPSnw949A";
+            }
+            else if(formNo==2){
+                frame1.src="https://forms.gle/9DG13GuQv4KPpD8b9";
+            }
+            else if(formNo==3){
+                frame1.src="https://forms.gle/NrnRUc4Z1rbCAR2a6";
+            }
+        </script>
+    </body>
+</html>

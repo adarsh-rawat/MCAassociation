@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    background-color: white;
+    color: white;
+    
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+html {
+    font-size: 22px;
+}
+header {
+    width: 100%;
+    background-color: white;
+}
+header .container{
+    width: 100%;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    height: 80px;
+}
+header ul li{
+    display: inline-block;
+    margin-left: 16px;
+    color: black;
+    font-size: 0.9rem;
+}
+header .hamburger-menu a{
+    display: block;
+    color: black!important;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+header .hamburger-menu {
+    box-sizing: border-box;
+    background-color: white;
+    transition: 0.5s;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 0;
+}
+header .hamburger {
+    display: none;
+    cursor: pointer;
+}
+.hero-wrapper {
+    position: relative;
+    height: 50vh;
+}
